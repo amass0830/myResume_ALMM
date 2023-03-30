@@ -6,6 +6,18 @@
     box-sizing: border-box;
 }
 
+.phrase{ 
+    font-style: italic;
+    color:#9a8ab6;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 0 auto;
+}
+.phrase:hover{
+    color: var(--primary-color)
+}
+
 :root{
     --primary-color:#ff7cc4;
     --text-color: #e2e1e2;
@@ -32,15 +44,14 @@ img{
     width: 100%;
 }
 
-.hrHorizontal { 
-    border-color: #9a8ab6;
-    grid-column: 1/-1;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-top: 2px solid #9a8ab6;
+hr {
+	grid-column: 1/-1;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-top: 2px solid #9a8ab6;
 }
 
 
@@ -83,17 +94,23 @@ img{
     font-weight: 400;
 }
 
+.educ_item{
+    font-size: 1rem;
+    color:#9a8ab6;
+    font-weight: 400;
+}
+
 /* Layouts */
 
-.container{ 
-    max-width: 1000px;
-    width: 90%;
-    margin: 0 auto; 
-    display: grid;
-    padding: 5rem;
-    background: #080708;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: #070707;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -125,10 +142,11 @@ img{
     cursor: pointer;
 }
 
-.group-1, .group-2{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+.group-1,
+.group-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
 }
 
 .group-3{
@@ -145,10 +163,13 @@ img{
     flex: 1;
 }
 
-@media only screen and (max-width: 768px){
-    .group-3{
-        flex-direction: column;
-    }
+@media only screen and (max-width: 768px) {
+	.profile {
+		margin-bottom: 0;
+	}
+	.group-3 {
+		flex-direction: column;
+	}
 }
 
 /* Profile */
@@ -213,7 +234,7 @@ img{
 /* Reference */
 
 .ref_item{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .ref_name{
@@ -224,35 +245,35 @@ img{
 /* Education  */
 
 .edu_item{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 /* Certificaction */
 
 .certification_item{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 /* Experience */
 
 .exp_item{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 /* Courses */
 
 .courses_item{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 /* Interests */
 
 .interest_items{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .interest_item{
@@ -278,7 +299,7 @@ img{
 /* Socials */
 
 .social_items{
-    margin-top: 1.2rem;
+    margin-top: 1rem;
 }
 
 .social_item{
@@ -290,7 +311,7 @@ img{
     color: var(--text-color)
 }
 
-.social_item:hover, .interest_item:hover {
+.social_item:hover, .interest_item:hover, .educ_item:hover {
     color: var(--primary-color);
 }
 
